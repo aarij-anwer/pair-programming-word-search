@@ -3,7 +3,7 @@
 const searchHorizontal = function(letters, word) {
   const horizontalJoin = letters.map(ls => ls.join(''));
   for (let l of horizontalJoin) {
-    console.log(l);
+    //console.log(l);
     if (l.includes(word)) return true;
   }
   return false;
@@ -33,5 +33,4 @@ const wordSearch = (letters, word) => {
   return answer;
 };
   
-  
-  
+module.exports = wordSearch;
